@@ -1,29 +1,31 @@
 <!DOCTYPE HTML>
+
 <html lang="en">
 <head>
+	{% load static %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>Website title - bootstrap html template</title>
 
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<link rel="{% static 'shortcut icon' %}" type="image/x-icon" href="images/favicon.ico">
 
 <!-- jQuery -->
-<script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+<script src= "{% static 'js/jquery-2.0.0.min.js' %}" type="text/javascript"></script>
 
 <!-- Bootstrap4 files-->
-<script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
+<link href="{% static 'css/bootstrap.cs'%}" rel="stylesheet" type="text/css"/>
 
 <!-- Font awesome 5 -->
-<link href="fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+<link href="{% stataic 'fonts/fontawesome/css/all.min.css' %}" type="text/css" rel="stylesheet">
 
 <!-- custom style -->
-<link href="css/ui.css" rel="stylesheet" type="text/css"/>
-<link href="css/responsive.css" rel="stylesheet" />
+<link href="{% static 'css/ui.css" rel="stylesheet' %}" type="text/css"/>
+<link href="{% static 'css/responsive.css" rel="stylesheet' %}" />
 
 <!-- custom javascript -->
-<script src="js/script.js" type="text/javascript"></script>
+<script src="{% static 'js/script.js" type="text/javascript' %}"></script>
 
 
 </head>
@@ -88,7 +90,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <!-- ========================= FOOTER ========================= -->
 <footer class="section-footer border-top padding-y">
 	<div class="container">
-		<p class="float-md-right"> 
+		<p class="float-md-right">
 			&copy Copyright 2019 All rights reserved
 		</p>
 		<p>
@@ -101,3 +103,4 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 </body>
 </html>
+
